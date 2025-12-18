@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video Editor Portfolio — Jimbo Franco</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Portfolio for a video editor — showreel, work, editing tools, and contact." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Jimbo Franco — Video Editor</a>
+      <nav class="nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#software">Software</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <h1>Crafting compelling stories through motion.</h1>
+          <p class="muted">Short-form to long-form — editing, color, and motion graphics. Based in [City].</p>
+          <a class="cta" href="#work">View Work</a>
+        </div>
+        <div class="hero-preview reveal">
+          <div class="preview-frame" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" tabindex="0">
+            <img src="assets/thumb1.svg" alt="video thumbnail" />
+            <button class="play-btn" aria-label="Play showreel">▶</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work container">
+      <h2 class="section-title reveal">Selected Work</h2>
+      <p class="muted reveal">Click a clip to open the player and watch.</p>
+      <div class="gallery">
+        <article class="card reveal" data-video-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4">
+          <img src="assets/thumb1.svg" alt="Video 1 thumbnail"/>
+          <h3>Project Title 1</h3>
+          <p class="muted">Short description of the edit and your role.</p>
+        </article>
+
+        <article class="card reveal" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
+          <img src="assets/thumb2.svg" alt="Video 2 thumbnail"/>
+          <h3>Project Title 2</h3>
+          <p class="muted">Short description of the edit and your role.</p>
+        </article>
+
+        <article class="card reveal" data-video-src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
+          <img src="assets/thumb3.svg" alt="Video 3 thumbnail"/>
+          <h3>Project Title 3</h3>
+          <p class="muted">Short description of the edit and your role.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="bio reveal">
+          <p>Hi — I'm <strong>Jimbo</strong>, a video editor specializing in narrative pacing, color grading and motion graphics. I collaborate with directors and brands to turn footage into compelling stories.</p>
+          <p class="muted">Available for freelance and contract work. Rates and availability upon request.</p>
+        </div>
+        <div class="skills reveal">
+          <h4>Services</h4>
+          <ul>
+            <li>Video editing</li>
+            <li>Color grading</li>
+            <li>Motion graphics & titles</li>
+            <li>Delivery & transcoding</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="software" class="software container">
+      <h2 class="section-title reveal">Editing Software</h2>
+      <div class="soft-grid reveal">
+        <div class="soft-item">DaVinci Resolve</div>
+      </div>
+      <p class="muted small-note reveal">Icons and exact versions can be swapped in `index.html` as needed.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2 class="section-title reveal">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p><strong>Email:</strong> <a href="mailto:you@example.com">peurangko@gmail.com</a></p>
+          <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p><strong>Location:</strong> City, Country   </p>
+          <p class="muted">Or send a quick message:</p>
+        </div>
+        <form class="contact-form reveal" action="mailto:you@example.com" method="post" enctype="text/plain">
+          <label>
+            <span>Name</span>
+            <input name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="muted">© Your Name — Video Editor • <a href="#">Privacy</a></p>
+    </div>
+  </footer>
+
+  <!-- Modal Overlay -->
+  <div id="videoModal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="Close video">✕</button>
+      <video controls class="modal-video" src="" ></video>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
